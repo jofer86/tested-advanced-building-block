@@ -1,6 +1,8 @@
 require "enumerables.rb"
 describe Enumerable do
+
   let(:arr) { (1..4).to_a }
+  
   describe "#my_each" do
     it "should behave like each, iterating and doing something with the element being iterated" do
       res1 = []
