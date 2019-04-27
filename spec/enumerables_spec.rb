@@ -15,9 +15,6 @@ describe Enumerable do
   end
 
   describe "#my_each_with_index" do
-    it "should be able to print the value of the element and its index" do
-      expect{arr.my_each_with_index { |ele, idx| puts "#{ele} is in index #{idx}" }}.to output("1 is in index 0\n2 is in index 1\n3 is in index 2\n4 is in index 3\n").to_stdout
-    end
     it "The value and the index should be able to interact with each other" do
       res1 = []
       arr.my_each_with_index { |ele, idx| res1 << ele * idx }     
